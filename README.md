@@ -8,10 +8,16 @@ rosserialを使用して角度制御の指令を送る電動雲台。
 # デモ動画
 https://youtu.be/2PF15hPyDig
 デモ動画出は3kgの大型カメラが手元に無かったため、1.5Lの炭酸飲料で代用
+# 使用機材
+- ArduinoMicro
+- バイポーラ　ステッピングモーター　SM-42BYG011
+- ポテンショメータ RDC506
+- その他ギア 減速比が1/18
 # 使用方法 
 ``` 
 $ roscore 
-$ rosrun rosserial_python serial_node /(mbedが刺さっているポート/dev/ttyACM0など) 
+$ rosrun rosserial_python serial_node /(arduinoが刺さっているポート/dev/ttyACM0など) 
 $ rostopic echo /degree # これで角度を計測 
 $ rostopic pub std_msgs/Int16 /servo -- 角度　# これで角度制御の目標値を設定、角度を変更させる 
 ``` 
+# 回路図
