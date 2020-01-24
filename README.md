@@ -1,2 +1,2 @@
-# YawPan_for_ROS
-ROSに対応したヨー軸雲台システム
+# PitchPan_for_ROS
+ROSに対応したピッチ軸雲台システム
